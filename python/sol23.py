@@ -1,7 +1,7 @@
 '''
 Created on May 18, 2015
 
-@author: nbkhzmb
+@author: Chloe Lu
 '''
 import Queue
 
