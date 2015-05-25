@@ -3,7 +3,6 @@ Created on May 25, 2015
 
 @author: nbkhzmb
 '''
-from operator import add
 import itertools
 class Solution:
     # @param {string} num1
