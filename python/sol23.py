@@ -1,6 +1,6 @@
 '''
 Created on May 18, 2015
-
+https://leetcode.com/problems/merge-k-sorted-lists/
 @author: Chloe Lu
 '''
 import Queue

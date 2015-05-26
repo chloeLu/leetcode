@@ -1,6 +1,6 @@
 '''
 Created on May 25, 2015
-
+https://leetcode.com/problems/multiply-strings/
 @author: nbkhzmb
 '''
 import itertools
