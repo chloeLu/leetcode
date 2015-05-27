@@ -1,6 +1,7 @@
 '''
 Created on May 26, 2015
 https://leetcode.com/problems/largest-rectangle-in-histogram/
+This solution is.... ugly.. check out perfect solution here https://leetcode.com/discuss/12780/my-concise-c-solution-ac-90-ms
 @author: nbkhzmb
 '''
 from collections import deque
@@ -20,13 +21,13 @@ class Solution:
                     firstColArea = (idx - sectionStartIdx) * stack[0][0]
                     maxArea = max(maxArea, firstColArea, self.largestRecGivenIncreasingStack(stack))
                     stack = []
-                elif stack[len(stack) - 1][0] > h:
+                elif stack[-1][0] > h:
                     q = deque()
                     q.appendleft(stack.pop())
-                    while stack and stack[len(stack) - 1][0] > h :
+                    while stack and stack[-1][0] > h :
                         q.appendleft(stack.pop())
                     maxArea = max(maxArea, self.largestRecGivenIncreasingStack(q))
-                    appendIdx = stack[len(stack) - 1][2] + 1
+                    appendIdx = stack[-1][2] + 1
                     
             # update stack and sectionStartIdx
             if h == 0:
@@ -46,7 +47,7 @@ class Solution:
         maxArea = 0
         if stack:
             # print stack
-            lastIdx = stack[len(stack) - 1][2]
+            lastIdx = stack[-1][2]
             for t in stack:
                 maxArea = max(maxArea, (lastIdx - t[1] + 1) * t[0])
         return maxArea
