@@ -19,8 +19,6 @@ class Solution:
         elif x < 0:
             val = -int(str(0 - x)[::-1])
         
-        print sys.maxint
-        
         if not -sys.maxint-1 <= val <= sys.maxint:
             return 0
         else:
