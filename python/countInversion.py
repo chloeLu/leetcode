@@ -3,12 +3,11 @@ Created on Jul 15, 2015
 
 @author: nbkhzmb
 '''
-import sys
 import os
 
 def countInversion():
     intArray = []
-    with open('file.txt') as f:
+    with open('IntegerArray.txt') as f:
         for line in f:
             intArray.append(int(line))
     
