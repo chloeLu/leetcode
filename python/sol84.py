@@ -2,7 +2,7 @@
 Created on May 26, 2015
 https://leetcode.com/problems/largest-rectangle-in-histogram/
 This solution is.... ugly.. check out perfect solution here https://leetcode.com/discuss/12780/my-concise-c-solution-ac-90-ms
-@author: nbkhzmb
+@author: Chloe Lu
 '''
 from collections import deque
 class Solution:
