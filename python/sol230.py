@@ -22,7 +22,7 @@ class Solution(object):
         self.countNodes(root, count, k, targetNode)
         return targetNode[0].val
     def countNodes(self, root, count, k, targetNodeRef):
-        print("root:" + str(root.val) + "count:" + str(count))
+        #print("root:" + str(root.val) + "count:" + str(count))
         if count[0] >= k:
             return
         if not root.left and not root.right:
